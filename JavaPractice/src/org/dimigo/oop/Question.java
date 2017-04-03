@@ -23,14 +23,14 @@ public class Question {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String[]questions = {"1.가장 좋아하는 가수는?","2.가장 좋아하는 배우는?","3.가장 좋아하는 과목은?"};
+		String[]questions = {"가장 좋아하는 가수는? ","가장 좋아하는 배우는? ","가장 좋아하는 과목은? "};
 		String[]answer = {"방탄","조정석","문학"};
 		
 		Scanner scanner = new Scanner(System.in);
 	
 
 		for(int i=0; i<3; i++){
-			System.out.println(questions[i]);
+			System.out.println(i+1+"."+questions[i]);
 			String answers = scanner.nextLine();
 			if(answer[i].equals(answers)){
 				System.out.println("정답입니다");
